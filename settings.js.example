@@ -1,0 +1,26 @@
+
+module.exports = {
+
+    usb_device: {
+        vendor_id: 2049,
+        product_id: 1
+    },
+
+    stripe: {
+
+        testing: {
+            api_key: 'PUT YOUR STRIPE TESTING API KEY HERE',
+
+            card: {
+                number: "4242424242424242",
+                exp_month: 02,
+                exp_year: 28,
+                name: "Gnarly Fnord"
+            }
+        },
+
+        pruduction: {
+            api_key: 'PUT YOUR STRIPE LIVE/REAL API KEY HERE'
+        }
+    }
+};
