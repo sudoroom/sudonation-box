@@ -1,0 +1,38 @@
+{
+  "name": "sudonation-box",
+  "description": "Software for physical device to receive credit card payments for multiple projects/organizations with minimal fuss ",
+  "version": "0.0.1",
+  "author": {
+    "name": "Marc Juul",
+    "email": "npm@juul.io",
+    "url": "http://juul.io"
+  },
+  "main": "./index",
+  "keywords": [
+    "credit card",
+    "donation",
+    "magnetic card",
+    "magnetic stripe card",
+    "accept"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sudoroom/sudonation-box.git"
+  },
+  "dependencies": {
+    "minimist": "^1.1.1",
+    "node-hid": "^0.4.0",
+    "stripe": "^3.3.4"
+  },
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/sudoroom/sudonation-box/issues"
+  },
+  "homepage": "https://github.com/sudoroom/sudonation-box",
+  "maintainers": [
+    {
+      "name": "Marc Juul",
+      "email": "npm@juul.io"
+    }
+  ]
+}

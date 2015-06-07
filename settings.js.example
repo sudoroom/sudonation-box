@@ -1,26 +1,47 @@
 
 module.exports = {
 
-    usb_device: {
-        vendor_id: 2049,
-        product_id: 1
+  usb_device: {
+    vendor_id: 2049,
+    product_id: 1
+  },
+
+  // put one entry here for each organization/project 
+  groups: {
+    sudoroom: {
+      order: 1, // use this to change rotary dial order
+      name: "sudo room", // name of group as displayed on lcd
+      stripe: {
+        live_api_key: 'PUT YOUR STRIPE LIVE API KEY HERE',
+        testing_api_key: 'PUT YOUR STRIPE TESTING API KEY HERE'
+      }
     },
-
-    stripe: {
-
-        testing: {
-            api_key: 'PUT YOUR STRIPE TESTING API KEY HERE',
-
-            card: {
-                number: "4242424242424242",
-                exp_month: 02,
-                exp_year: 28,
-                name: "Gnarly Fnord"
-            }
-        },
-
-        pruduction: {
-            api_key: 'PUT YOUR STRIPE LIVE/REAL API KEY HERE'
-        }
+    counter_culture_labs: {
+      order: 2, // use this to change rotary dial order
+      name: "Counter Culture Labs", // name of group as displayed on lcd
+      stripe: {
+        live_api_key: 'PUT YOUR STRIPE LIVE API KEY HERE',
+        testing_api_key: 'PUT YOUR STRIPE TESTING API KEY HERE'
+      }
     }
+  },
+
+  // Used to test
+  testing: {
+
+    // group to charge in test mode when no rotary dial input present
+    group: 'sudoroom', 
+
+    // amount to charge in test mode when no rotary dial input present
+    amount: 1000, // in US cents
+
+    // credit card to use during testing
+    // this is a special stripe testing card number
+    stripe_card: {
+      number: "4242424242424242",
+      exp_month: 02,
+      exp_year: 28,      
+      name: "Gnarly Fnord"
+    }
+  }
 };
