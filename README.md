@@ -3,7 +3,7 @@
 THIS SOFTWARE IS NOT YET IN A WORKING STATE!
 
 
-sudonation-box is a physical box that receives credit card donations for several different organizations or projects. It has one knob to selection organization or project, another to selection donation amount, a two-line LCD character display to display the selection and an button to confirm the transaction. It of course also has a magnet card reader.
+sudonation-box is a physical box that receives credit card donations for several different organizations or projects. It has one knob to selection organization or project, another to selection donation amount, a speaker that speaks out the transaction before confirmation, a button to explain what the project/group is about and a button to confirm the transaction. It of course also has a magnet card reader.
 
 This repository includes the code for the node.js app and a laser-cuttable design for the box. The easy way to set this all up is to use the pre-made SD-card image for the raspberry pi (coming soon!).
 
@@ -56,8 +56,13 @@ To run in live mode:
 * One raspberry pi
 * One SD card for the raspberry pi
 * One USB magnetic stripe card reader (that acts like a keyboard)
-* Two rotary encoders (one of which must be pressable)
-* One green button (built in light optional)
-* Two knobs for the rotary encoders
+* Two six-position rotary switches
+* Two knobs for the rotary switches
+* One set of powered speakers (5v powered preferred)
+* Two buttons (built in light optional)
 * One box/case (laser cuttable design included, but any box works)
 
+Optional cash acceptor expansion:
+
+* One bill acceptor with pulse output
+* One Arduino Leonardo or equivalent
